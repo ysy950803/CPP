@@ -28,6 +28,10 @@ public:
     int test_add(int a, int b) override {
         return a - b + v + v;
     }
+
+    float base() override {
+        return 1.1f;
+    }
 };
 
 // 2
