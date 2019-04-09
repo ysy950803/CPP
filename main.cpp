@@ -8,14 +8,27 @@ using namespace std;
 // 1
 class Test {
 public:
-    mutable int v;
+    mutable int v = 0;
 
-    int add(int a, int b);
+    virtual int test_add(int a, int b) {
+        return a - b + v;
+    }
+
+    virtual float base() = 0;
 };
 
-int Test::add(int a, int b) {
-    return a + b + v;
-}
+//int Test::test_add(int a, int b) {
+//    return a + b + v;
+//}
+
+class TSon : public Test {
+private:
+protected:
+public:
+    int test_add(int a, int b) override {
+        return a - b + v + v;
+    }
+};
 
 // 2
 extern int count;
@@ -49,6 +62,16 @@ void print_double(double value) {
 void main_12_forward();
 
 int main() {
+    // 1
+    Test *test;
+    TSon tSon{};
+    test = &tSon;
+
+    test->v = 10;
+    print_int(test->test_add(test->v, 0));
+    tSon.v = 11;
+    print_int(tSon.test_add(tSon.v, 0));
+
     // 2
     int count = 1;
     print_int(count);
