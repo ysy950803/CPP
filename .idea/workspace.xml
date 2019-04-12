@@ -12,13 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed50d89a-9367-41df-961a-90c0fb142741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ANDKDev/.idea/markdown-navigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ANDKDev/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ANDKDev/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ANDKDev/app/src/main/cpp/native-lib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ANDKDev/app/src/main/cpp/native-lib.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ANDKDev/app/src/main/java/com/ysy/andkdev/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ANDKDev/app/src/main/java/com/ysy/andkdev/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPP" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+            <state relative-caret-position="383">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -149,7 +144,7 @@
       <workItem from="1554779281102" duration="3788000" />
       <workItem from="1554784199970" duration="18306000" />
       <workItem from="1555039161691" duration="983000" />
-      <workItem from="1555063381985" duration="911000" />
+      <workItem from="1555063381985" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="Add basic usage.">
       <created>1554791271078</created>
@@ -183,7 +178,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23988000" />
+    <option name="totallyTimeSpent" value="24595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -196,14 +191,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-6" width="1855" height="1086" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37551022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.36020407" />
@@ -333,8 +327,8 @@
     <entry file="file://$PROJECT_DIR$/native-lib.cpp" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+        <state relative-caret-position="383">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

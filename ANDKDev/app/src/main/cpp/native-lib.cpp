@@ -7,14 +7,9 @@ extern "C" {
 #endif
 
 void test_crash() {
-    try {
-        int x = 10;
-        int y = x / 0;
-        LOGD("crash %d", y);
-        throw "Boom!";
-    } catch (const char *msg) {
-        LOGD("crash msg: %s", msg);
-    }
+    int x = 10;
+    int y = x / 0;
+//    LOGD("crash %d", y);
 }
 
 jstring Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */,
