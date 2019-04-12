@@ -2,13 +2,29 @@
 #include <string>
 #include "logger.h"
 
-extern "C" JNIEXPORT jstring JNICALL
-Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */,
-                                                jint end_i, jstring str) {
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void test_crash() {
+    try {
+        int x = 10;
+        int y = x / 0;
+        LOGD("crash %d", y);
+        throw "Boom!";
+    } catch (const char *msg) {
+        LOGD("crash msg: %s", msg);
+    }
+}
+
+jstring Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */,
+                                                        jint end_i, jstring str) {
+    test_crash();
+
     long sum = 0;
     for (int i = 0; i < end_i; ++i) {
         printf("TEST-1 %d", i);
-        LOGD("%d", i);
+//        LOGD("%d", i);
         sum += i;
     }
 
@@ -21,3 +37,12 @@ Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */,
     env->ReleaseStringUTFChars(str, c_str);
     return env->NewStringUTF(hello.c_str());
 }
+
+jint JNI_OnLoad(JavaVM *vm, void *reserved) {
+//    test_crash();
+    return JNI_VERSION_1_6;
+}
+
+#ifdef __cplusplus
+}
+#endif
