@@ -6,10 +6,10 @@
 extern "C" {
 #endif
 
-void test_crash() {
+JNIEXPORT void JNICALL test_crash() {
     int x = 10;
     int y = x / 0;
-//    LOGD("crash %d", y);
+    LOGD("crash %d", y);
 }
 
 jstring Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* this */,
