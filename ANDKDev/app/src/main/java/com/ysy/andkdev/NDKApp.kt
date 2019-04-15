@@ -7,7 +7,7 @@ import android.util.Log
 
 class NDKApp : Application() {
 
-    private var mSwitchCount : Int = 0
+    private var mSwitchCount: Int = 0
 
     override fun onCreate() {
         super.onCreate()

@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
      */
     external fun stringFromJNI(endI: Int, str: String): String
 
-    external fun sumArrayFromJNI(arr : IntArray) : Int
+    external fun sumArrayFromJNI(arr: IntArray): Int
 
     companion object {
 
