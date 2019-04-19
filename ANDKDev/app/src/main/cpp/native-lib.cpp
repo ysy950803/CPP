@@ -1,5 +1,7 @@
 #include <jni.h>
 #include <string>
+#include <aaudio/AAudio.h>
+#include <android/NeuralNetworks.h>
 #include "logger.h"
 
 #ifdef __cplusplus
@@ -32,11 +34,6 @@ jstring Java_com_ysy_andkdev_MainActivity_stringFromJNI(JNIEnv *env, jobject /* 
     return env->NewStringUTF(hello.c_str());
 }
 
-jint JNI_OnLoad(JavaVM *vm, void *reserved) {
-    test_crash();
-    return JNI_VERSION_1_6;
-}
-
 jint Java_com_ysy_andkdev_MainActivity_sumArrayFromJNI(JNIEnv *env, jobject /* this */, jintArray j_arr) {
     int *arr = env->GetIntArrayElements(j_arr, nullptr);
     if (arr == nullptr) {
@@ -54,3 +51,8 @@ jint Java_com_ysy_andkdev_MainActivity_sumArrayFromJNI(JNIEnv *env, jobject /* t
 #ifdef __cplusplus
 }
 #endif
+
+jint JNI_OnLoad(JavaVM *vm, void *reserved) {
+    test_crash();
+    return JNI_VERSION_1_6;
+}
