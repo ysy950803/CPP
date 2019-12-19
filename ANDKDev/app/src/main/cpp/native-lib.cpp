@@ -8,6 +8,11 @@
 extern "C" {
 #endif
 
+JNIEXPORT void JNICALL test_nn() {
+    ANeuralNetworksMemory* mem1 = NULL;
+    // TODO
+}
+
 JNIEXPORT void JNICALL test_crash() {
     int x = 10;
     int y = x / 0;
