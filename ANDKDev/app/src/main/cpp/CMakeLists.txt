@@ -12,6 +12,12 @@ add_library(
 
 target_link_libraries(
         test_native
+        neuralnetworks
+        android
+        log)
+
+target_link_libraries(
         test_nn
+        neuralnetworks
         android
         log)
