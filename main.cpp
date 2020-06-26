@@ -35,8 +35,8 @@ public:
 };
 
 // 2
-extern int count;
-int count = 0;
+extern int test_count;
+int test_count = 0;
 
 void print_int(int value) {
     cout << value << endl;
@@ -53,7 +53,7 @@ extern string extern_test(const string &value);
 
 // 9
 auto lamda1 = [](int x, int y) -> bool {
-    count++;
+    test_count++;
     return x < y;
 };
 
@@ -79,11 +79,11 @@ int main() {
     // 2
     int count = 1;
     print_int(count);
-    print_int(::count);
+    print_int(::test_count);
     {
         int count = 2;
         print_int(count);
-        print_int(::count);
+        print_int(::test_count);
     }
 
     // 3
